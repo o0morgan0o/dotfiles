@@ -46,7 +46,8 @@ export EDITOR=/usr/bin/nvim
 
 # Added by Toolbox App
 export PATH="$PATH:/home/morgan/.local/share/JetBrains/Toolbox/scripts"
-export TERMINAL="/usr/bin/fish"
+export TERM="/usr/bin/x-terminal-emulator"
+# export TERM="/usr/bin/fish"
 
 alias vi="nvim":
 alias f="fzf";

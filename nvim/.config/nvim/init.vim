@@ -7,8 +7,8 @@ set number
 set clipboard=unnamedplus
 
 call plug#begin()
-Plug 'ncm2/ncm2'
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
-Plug 'nvim-treesitter/nvim-treesitter'
+" Plug 'ncm2/ncm2'
+" Plug 'SirVer/ultisnips'
+" Plug 'honza/vim-snippets'
+" Plug 'nvim-treesitter/nvim-treesitter'
 call plug#end()
