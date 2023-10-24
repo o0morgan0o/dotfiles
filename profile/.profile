@@ -44,7 +44,8 @@ export EDITOR=/usr/bin/nvim
 # Added by Toolbox App
 export PATH="$PATH:~/.local/share/JetBrains/Toolbox/scripts"
 export PATH="$PATH:~/.local/share/JetBrains/Toolbox/scripts"
-#export TERM="/usr/bin/x-terminal-emulator"
+export TERM="alacritty"
+# export TERM="/usr/bin/x-terminal-emulator"
 # export TERM="/usr/bin/fish"
 
 alias vi="nvim":
