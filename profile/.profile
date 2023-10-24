@@ -39,12 +39,12 @@ export PATH
 export EDITOR=/usr/bin/nvim
 
 # xrandr
-/home/morgan/.screenlayout/layout.sh
+~/.screenlayout/layout.sh
 
 # Added by Toolbox App
-export PATH="$PATH:/home/morgan/.local/share/JetBrains/Toolbox/scripts"
-export PATH="$PATH:/home/kali2/.local/share/JetBrains/Toolbox/scripts"
-export TERM="/usr/bin/x-terminal-emulator"
+export PATH="$PATH:~/.local/share/JetBrains/Toolbox/scripts"
+export PATH="$PATH:~/.local/share/JetBrains/Toolbox/scripts"
+#export TERM="/usr/bin/x-terminal-emulator"
 # export TERM="/usr/bin/fish"
 
 alias vi="nvim":
