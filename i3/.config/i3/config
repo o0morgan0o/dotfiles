@@ -51,7 +51,7 @@ floating_modifier $mod
 #bindsym $mod+Return exec xterm
 #bindsym $mod+Return exec "tmux attach || tmux new"
 #bindsym $mod+Return exec "tmux"
-bindsym $mod+Return exec /home/morgan/i3-tmux.sh
+bindsym $mod+Return exec ~/scripts/i3-tmux.sh
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -226,8 +226,8 @@ exec --no-startup-id setxkbmap -layout "us" -variant "qwerty-fr"
 
 
 # polybar
-exec --no-startup-id polybar --config=/home/morgan/.config/polybar/config.ini docker
-exec --no-startup-id polybar --config=/home/morgan/.config/polybar/config.ini main
+exec --no-startup-id polybar --config=~/.config/polybar/config.ini docker
+exec --no-startup-id polybar --config=~/.config/polybar/config.ini main
 
 # start gpaste at start
 exec --no-startup-id gpaste-client
