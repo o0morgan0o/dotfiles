@@ -180,7 +180,7 @@ bindsym $mod+r mode "resize"
 #        status_command i3status
 #}
 
-include ~/.config/i3/desktop-screens.sh
+include ~/.config/i3/my-workspaces.conf
 
 #exec xrandr --output HDMI-0 --right-of DP-4
 #exec xrandr --output DP-3 --right-of HDMI-0
