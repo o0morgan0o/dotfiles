@@ -429,13 +429,13 @@ window:
 # Default:
 #   - (Linux/BSD/macOS) `$SHELL` or the user's login shell, if `$SHELL` is unset
 #   - (Windows) powershell
-shell:
+# shell:
   # program: /usr/bin/fish
-  program: /bin/zsh
-  args:
-    - -l
-    - -c
-    - "tmux attach || tmux"
+  # program: /bin/zsh
+  # args:
+  #   - -l
+  #   - -c
+    # - "tmux attach || tmux"
 #  args:
 #    - --login
 
