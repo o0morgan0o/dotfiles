@@ -184,7 +184,7 @@ include ~/.config/i3/my-workspaces.conf
 #exec xrandr --output HDMI-0 --right-of DP-4
 #exec xrandr --output DP-3 --right-of HDMI-0
 #exec xrandr --output DP-0 --right-of DP-3
-exec --no-startup-id ~/.screenlayout/layout.sh
+exec --no-startup-id ~/.screenlayout/my-layout.sh
 
 # keyboard rate
 exec --no-startup-id xset r rate 190 60
