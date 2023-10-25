@@ -78,7 +78,12 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 #plugins=(git z zsh-autosuggestions zsh-syntax-highlighting tmux)
-plugins=(git z zsh-autosuggestions zsh-syntax-highlighting )
+plugins=(
+  git # définit tout un tas d'alias pour git
+  z
+  zsh-autosuggestions
+  zsh-syntax-highlighting
+  )
 
 source $ZSH/oh-my-zsh.sh
 
