@@ -80,7 +80,7 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 #plugins=(git z zsh-autosuggestions zsh-syntax-highlighting tmux)
 plugins=(
   git # définit tout un tas d'alias pour git
-  z
+  z # permet de voir les répertoires les plus fréquemment utilisés `z <nom du répertoire>`
   zsh-autosuggestions
   zsh-syntax-highlighting
   )
