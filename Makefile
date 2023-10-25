@@ -1,5 +1,5 @@
 all:
-	stow --verbose --target=$$HOME --restow --adopt */
+	stow --verbose --dotfiles --target=$$HOME --restow --adopt */
 
 delete: 
 	stow --verbose --target=$$HOME --delete --adopt */
