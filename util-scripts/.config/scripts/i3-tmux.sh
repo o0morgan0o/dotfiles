@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #i3-msg focus "right"
-alacritty --config-file ~/.config/alacritty/alacritty.toml
+alacritty --config-file=$HOME/.config/alacritty/alacritty.toml
 
 #if ! tmux has-session -t "main" 2>/dev/null; then
 #  tmux new-session -s "main" -c "main" -d
