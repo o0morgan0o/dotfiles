@@ -51,7 +51,7 @@ floating_modifier $mod
 #bindsym $mod+Return exec xterm
 #bindsym $mod+Return exec "tmux attach || tmux new"
 #bindsym $mod+Return exec "tmux"
-bindsym $mod+Return exec ~/scripts/i3-tmux.sh
+bindsym $mod+Return exec ~/.config/scripts/i3-tmux.sh
 
 # kill focused window
 bindsym $mod+Shift+q kill
