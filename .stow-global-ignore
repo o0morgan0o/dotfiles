@@ -2,4 +2,4 @@
 .*\my-workspaces.lnk
 .*\my-layout.lnk
 
-.*\.lnk
+.*.lnk
