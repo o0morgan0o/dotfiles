@@ -45,7 +45,6 @@ export EDITOR=/usr/bin/nvim
 export PATH="$PATH:~/.local/share/JetBrains/Toolbox/scripts"
 export PATH="$PATH:~/.local/share/JetBrains/Toolbox/scripts"
 export TERM="alacritty"
-# export TERM="/usr/bin/x-terminal-emulator"
 # export TERM="/usr/bin/fish"
 
 alias vi="nvim":
