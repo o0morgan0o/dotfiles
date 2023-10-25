@@ -83,6 +83,7 @@ plugins=(
   z # permet de voir les répertoires les plus fréquemment utilisés `z <nom du répertoire>`
   zsh-autosuggestions
   zsh-syntax-highlighting
+  zsh-256color
   )
 
 # User configuration
