@@ -39,7 +39,7 @@ export PATH
 export EDITOR=/usr/bin/nvim
 
 # xrandr
-~/.screenlayout/layout.sh
+#~/.screenlayout/layout.sh
 
 # Added by Toolbox App
 export PATH="$PATH:~/.local/share/JetBrains/Toolbox/scripts"
