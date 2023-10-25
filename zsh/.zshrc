@@ -108,6 +108,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias r="ranger"
+alias vim="nvim"
+alias vi="nvim"
 
 ZSH_THEME="agnoster"
 
