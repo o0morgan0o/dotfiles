@@ -58,7 +58,7 @@ bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
 #bindsym $mod+d exec --no-startup-id rofi -show combi -run-command "i3-msg exec '{cmd}'" -show-icons
-include ~/.config/i3/my-rofi.conf
+include ~/.config/i3/my-rofi.lnk
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -179,12 +179,12 @@ bindsym $mod+r mode "resize"
 #        status_command i3status
 #}
 
-include ~/.config/i3/my-workspaces.conf
+include ~/.config/i3/my-workspaces.lnk
 
 #exec xrandr --output HDMI-0 --right-of DP-4
 #exec xrandr --output DP-3 --right-of HDMI-0
 #exec xrandr --output DP-0 --right-of DP-3
-exec --no-startup-id ~/scripts/my-layout.sh
+exec --no-startup-id ~/.config/scripts/my-layout.lnk
 
 # keyboard rate
 exec --no-startup-id xset r rate 190 60
