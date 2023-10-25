@@ -147,42 +147,16 @@ import:
 #draw_bold_text_with_bright_colors: false
 
 # Colors (Tomorrow Night)
-#colors:
+# colors:
 # Default colors
-#primary:
-#  background: '#1d1f21'
-#  foreground: '#c5c8c6'
+  # primary:
+  #   background: '#1d1f21'
+  #   foreground: '#c5c8c6'
 
-colors:
-  primary:
-    background: '0x23252e'
-    foreground: '0xFFFFFF'
-
-  normal:
-    black:   '0x1F2229'
-    red:     '0xD41919'
-    green:   '0x5EBDAB'
-    yellow:  '0xFEA44C'
-    blue:    '0x367BF0'
-    magenta: '0x9755B3'
-    cyan:    '0x49AEE6'
-    white:   '0xE6E6E6'
-
-  bright:
-    black:   '0x198388'
-    red:     '0xEC0101'
-    green:   '0x47D4B9'
-    yellow:  '0xFF8A18'
-    blue:    '0x277FFF'
-    magenta: '0x962AC3'
-    cyan:    '0x05A1F7'
-    white:   '0xFFFFFF'
-
-
-window:
-  padding:
-    x: 0
-    y: 3
+# window:
+#   padding:
+#     x: 0
+#     y: 3
 
 # Bright and dim foreground colors
 #
@@ -190,8 +164,8 @@ window:
 # present. If the bright foreground color is not set, or
 # `draw_bold_text_with_bright_colors` is `false`, the normal foreground
 # color will be used.
-#dim_foreground: '#828482'
-#bright_foreground: '#eaeaea'
+# dim_foreground: '#828482'
+# bright_foreground: '#eaeaea'
 
 # Cursor colors
 #
@@ -199,7 +173,7 @@ window:
 #
 # Allowed values are CellForeground/CellBackground, which reference the
 # affected cell, or hexadecimal colors like #ff00ff.
-#cursor:
+# cursor:
 #  text: CellBackground
 #  cursor: CellForeground
 
@@ -209,7 +183,7 @@ window:
 #
 # Allowed values are CellForeground/CellBackground, which reference the
 # affected cell, or hexadecimal colors like #ff00ff.
-#vi_mode_cursor:
+# vi_mode_cursor:
 #  text: CellBackground
 #  cursor: CellForeground
 
@@ -274,7 +248,7 @@ window:
 #  background: CellForeground
 
 # Normal colors
-#normal:
+# normal:
 #  black:   '#1d1f21'
 #  red:     '#cc6666'
 #  green:   '#b5bd68'
@@ -285,7 +259,7 @@ window:
 #  white:   '#c5c8c6'
 
 # Bright colors
-#bright:
+# bright:
 #  black:   '#666666'
 #  red:     '#d54e53'
 #  green:   '#b9ca4a'
@@ -299,7 +273,7 @@ window:
 #
 # If the dim colors are not set, they will be calculated automatically based
 # on the `normal` colors.
-#dim:
+# dim:
 #  black:   '#131415'
 #  red:     '#864343'
 #  green:   '#777c44'
