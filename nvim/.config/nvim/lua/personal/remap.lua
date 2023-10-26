@@ -1,6 +1,6 @@
-local defaults = { noremap = true, silent = true }
+--local defaults = { noremap = true, silent = true }
 -- vim.keymap.set("i", "jk", "<esc>", defaults)
-vim.cmd("inoremap <nowait> jk <Esc>")
+--vim.cmd("inoremap <nowait> jk <Esc>")
 
 
 
