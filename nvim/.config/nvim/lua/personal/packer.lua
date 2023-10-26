@@ -18,47 +18,49 @@ return require('packer').startup(function(use)
 	end }
   )
 
-  --use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+  use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   --use ('nvim-treesitter/playground')
   --use ('theprimeagen/harpoon')
   --use ('mbbill/undotree')
   --use ('tpope/vim-fugitive')
   use ('preservim/nerdtree')
 
-  --use {
-  --'VonHeikemen/lsp-zero.nvim',
-  --branch = 'v3.x',
-  --requires = {
+  use {
+  'VonHeikemen/lsp-zero.nvim',
+  branch = 'v3.x',
+  requires = {
     --- Uncomment these if you want to manage LSP servers from neovim
-    -- {'williamboman/mason.nvim'},
-    -- {'williamboman/mason-lspconfig.nvim'},
+     {'williamboman/mason.nvim'},
+     {'williamboman/mason-lspconfig.nvim'},
     --
 	  -- LSP Support
-	  --{'neovim/nvim-lspconfig'},
-	  --{'williamboman/mason.nvim'},
-	  --{'williamboman/mason-lspconfig.nvim'},
+	  {'neovim/nvim-lspconfig'},
+	  {'williamboman/mason.nvim'},
+	  {'williamboman/mason-lspconfig.nvim'},
 
 	  -- Autocompletion
-	  --{'hrsh7th/nvim-cmp'},
-	  --{'hrsh7th/cmp-buffer'},
-	  --{'hrsh7th/cmp-path'},
-	  --{'saadparwaiz1/cmp_luasnip'},
-	  --{'hrsh7th/cmp-nvim-lsp'},
-	  --{'hrsh7th/cmp-nvim-lua'},
+	  {'hrsh7th/nvim-cmp'},
+	  {'hrsh7th/cmp-buffer'},
+	  {'hrsh7th/cmp-path'},
+	  {'saadparwaiz1/cmp_luasnip'},
+	  {'hrsh7th/cmp-nvim-lsp'},
+	  {'hrsh7th/cmp-nvim-lua'},
 
 	  -- Snippets
-	  ----{'L3MON4D3/LuaSnip'},
-	  --{'rafamadriz/friendly-snippets'},
+	  {'L3MON4D3/LuaSnip'},
+	  {'rafamadriz/friendly-snippets'},
 
-    --}
-  --}
+    }
+  }
 
-  --use {
-	  --"max397574/better-escape.nvim",
-	  --config = function()
-	    --require("better_escape").setup()
-	  --end,
-  --}
+  use {
+	  "max397574/better-escape.nvim",
+	  config = function()
+	  require("better_escape").setup()
+	  end,
+  }
+
+  use('neoclide/coc.nvim') -- nodejs
 
 
 
