@@ -84,6 +84,7 @@ plugins=(
   zsh-autosuggestions
   zsh-syntax-highlighting
   zsh-256color
+  kubectl-autocomplete
   )
 
 # User configuration
@@ -114,6 +115,7 @@ plugins=(
 alias r="ranger"
 alias vim="nvim"
 alias vi="nvim"
+alias k="kubectl"
 
 ZSH_THEME="agnoster"
 
@@ -145,3 +147,8 @@ setxkbmap -layout "us" -variant "qwerty-fr"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# BEGIN SNIPPET: Platform.sh CLI configuration
+HOME=${HOME:-'/home/morgan'}
+export PATH="$HOME/"'.platformsh/bin':"$PATH"
+if [ -f "$HOME/"'.platformsh/shell-config.rc' ]; then . "$HOME/"'.platformsh/shell-config.rc'; fi # END SNIPPET
