@@ -85,6 +85,7 @@ plugins=(
   zsh-syntax-highlighting
   zsh-256color
   kubectl-autocomplete
+  symfony-console # for autocompletion symfony
   )
 
 # User configuration
@@ -116,6 +117,7 @@ alias r="ranger"
 alias vim="nvim"
 alias vi="nvim"
 alias k="kubectl"
+alias w="watch "
 
 ZSH_THEME="agnoster"
 
@@ -152,3 +154,19 @@ export NVM_DIR="$HOME/.nvm"
 HOME=${HOME:-'/home/morgan'}
 export PATH="$HOME/"'.platformsh/bin':"$PATH"
 if [ -f "$HOME/"'.platformsh/shell-config.rc' ]; then . "$HOME/"'.platformsh/shell-config.rc'; fi # END SNIPPET
+
+
+
+
+# pnpm
+export PNPM_HOME="/home/morgan/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+
+
+
+if [ -e /home/morgan/.nix-profile/etc/profile.d/nix.sh ]; then . /home/morgan/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer

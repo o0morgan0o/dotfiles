@@ -5,7 +5,7 @@
 
 if ! tmux has-session -t "main" 2>/dev/null; then
   tmux new-session -s "main" -c "main" -d
-  alacritty --config-file=$HOME/.config/alacritty/alacritty.toml -e $SHELL -c 'tmux attach -t "main" || tmux'
+  alacritty --config-file=$HOME/.config/alacritty/alacritty.yml -e $SHELL -c 'tmux attach -t "main" || tmux'
   #alacritty --config-file ~/.config/alacritty/alacritty.toml
   #alacritty --config-file ~/.config/alacritty/alacritty.toml
 else
