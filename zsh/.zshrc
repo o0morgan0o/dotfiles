@@ -157,7 +157,6 @@ if [ -f "$HOME/"'.platformsh/shell-config.rc' ]; then . "$HOME/"'.platformsh/she
 
 
 
-
 # pnpm
 export PNPM_HOME="/home/morgan/.local/share/pnpm"
 case ":$PATH:" in
@@ -167,6 +166,8 @@ esac
 # pnpm end
 
 
-
-
 if [ -e /home/morgan/.nix-profile/etc/profile.d/nix.sh ]; then . /home/morgan/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+
+# conda
+path+=('/home/morgan/anaconda3/bin/')
+export PATH
