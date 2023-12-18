@@ -135,6 +135,7 @@ ZSH_TMUX_CONFIG=$HOME/.tmux
 source $ZSH/oh-my-zsh.sh
 
 export PATH="${PATH}:/home/morgan/.cargo/bin"
+export PATH="${PATH}:/home/morgan/.npm-global/bin"
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
