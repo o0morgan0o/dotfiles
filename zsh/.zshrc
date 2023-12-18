@@ -84,6 +84,8 @@ plugins=(
   zsh-autosuggestions
   zsh-syntax-highlighting
   zsh-256color
+  kubectl-autocomplete
+  symfony-console # for autocompletion symfony
   )
 
 # User configuration
@@ -114,6 +116,8 @@ plugins=(
 alias r="ranger"
 alias vim="nvim"
 alias vi="nvim"
+alias k="kubectl"
+alias w="watch "
 
 ZSH_THEME="agnoster"
 
@@ -131,6 +135,7 @@ ZSH_TMUX_CONFIG=$HOME/.tmux
 source $ZSH/oh-my-zsh.sh
 
 export PATH="${PATH}:/home/morgan/.cargo/bin"
+export PATH="${PATH}:/home/morgan/.npm-global/bin"
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
@@ -146,10 +151,11 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# pnpm
-export PNPM_HOME="/home/kali2/.local/share/pnpm"
+export PNPM_HOME="~/.local/share/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+export PATH

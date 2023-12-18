@@ -49,3 +49,5 @@ export TERM="alacritty"
 
 alias vi="nvim":
 alias f="fzf"
+
+if [ -e /home/morgan/.nix-profile/etc/profile.d/nix.sh ]; then . /home/morgan/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer

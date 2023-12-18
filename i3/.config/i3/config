@@ -68,27 +68,27 @@ include ~/.config/i3/my-rofi.lnk
 
 # change focus
 bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
-
-#focus_wrapping workspace
-focus_wrapping no
-
-# shortcut for focus
-bindsym $mod+c [title=Code] focus
-
+bindsym $mod+k focus right
+#bindsym $mod+j focus left
+#bindsym $mod+l focus up
+#bindsym $mod+semicolon focus right
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
+#focus_wrapping workspace
+focus_wrapping workspace
+
+# shortcut for focus
+bindsym $mod+c [title=Code] focus
+
 # move focused window
 bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
+bindsym $mod+Shift+k move right
+#bindsym $mod+Shift+l move up
+#bindsym $mod+Shift+semicolon move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -106,7 +106,7 @@ bindsym $mod+v split v
 #bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-#bindsym $mod+s layout stacking
+bindsym $mod+z layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
@@ -115,7 +115,10 @@ bindsym $mod+e layout toggle split
 bindsym $mod+f floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+#bindsym $mod+space focus mode_toggle
+
+# hotky to lock screen
+bindsym $mod+l  exec "i3lock --color 000000"
 
 # focus the parent container
 #bindsym $mod+a focus parent
