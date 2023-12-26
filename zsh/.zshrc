@@ -113,6 +113,7 @@ plugins=(
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias x="xplr"
 alias r="ranger"
 alias vim="nvim"
 alias vi="nvim"
