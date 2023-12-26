@@ -5,6 +5,9 @@ keymap("n", "<Space>", "", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+-- remap jk to esc
+vim.api.nvim_set_keymap("i", "jk", "<ESC>", {})
+
 keymap("n", "<C-Space>", "<cmd>WhichKey \\<space><cr>", opts)
 keymap("n", "<C-i>", "<C-i>", opts)
 
