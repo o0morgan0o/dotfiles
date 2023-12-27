@@ -7,6 +7,9 @@ local M = {
       "folke/neodev.nvim",
       commit = "b094a663ccb71733543d8254b988e6bebdbdaca4",
     },
+    -- {
+    --   "nvimtools/none-ls.nvim"
+    -- }
   },
 }
 
@@ -19,6 +22,10 @@ local function lsp_keymaps(bufnr)
   keymap(bufnr, "n", "gI", "<cmd>lua vim.lsp.buf.implementation()<CR>", opts)
   keymap(bufnr, "n", "gr", "<cmd>lua vim.lsp.buf.references()<CR>", opts)
   keymap(bufnr, "n", "gl", "<cmd>lua vim.diagnostic.open_float()<CR>", opts)
+  -- keymap(bufnr, "n", "ge", "<cmd>lua vim.diagnostic.goto_next()<CR>", opts)
+  keymap(bufnr, "n", "<C-e>", "<cmd>lua vim.diagnostic.goto_next()<CR>", opts)
+  keymap(bufnr, "n", "gp", "<cmd>lua vim.diagnostic.goto_prev()<CR>", opts)
+  -- format
 end
 
 M.on_attach = function(client, bufnr)
@@ -60,6 +67,9 @@ function M.config()
     "yamlls",
     "marksman",
     "tailwindcss",
+    -- trying to add php
+    "intelephense",
+    -- "none-ls"
   }
 
   local default_diagnostic_config = {
@@ -110,6 +120,30 @@ function M.config()
     if server == "lua_ls" then
       require("neodev").setup {}
     end
+
+    -- for format on save
+    -- if server == "none-ls" then
+    --   local null_ls = require("null-ls")
+    --     null_ls.setup({
+    --       on_attach = function(client, bufnr)
+    --         if client.supports_method("textDocument/formatting") then
+    --           vim.api.nvim_clear_autocmds({ group = augroup, buffer = bufnr })
+    --           vim.api.nvim_create_autocmd("BufWritePre", {
+    --             group = augroup,
+    --             buffer = bufnr,
+    --             callback = function()
+    --               vim.lsp.buf.format()
+    --             end,
+    --           })
+    --         end
+    --       end,
+    --       sources = {
+    --         null_ls.builtins.formatting.stylua,
+    --         null_ls.builtins.diagnostics.eslint,
+    --         null_ls.builtins.completion.spell,
+    --         }
+    --     })
+    -- end
 
     lspconfig[server].setup(opts)
   end

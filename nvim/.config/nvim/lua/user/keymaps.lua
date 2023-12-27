@@ -8,6 +8,12 @@ vim.g.maplocalleader = " "
 -- remap jk to esc
 vim.api.nvim_set_keymap("i", "jk", "<ESC>", {})
 
+-- focus nvim tree
+vim.keymap.set("n", "<M-1>", "<cmd>:NvimTreeFocus<CR>")
+
+-- format
+vim.keymap.set("n", "<C-f>", "<cmd>:lua vim.lsp.buf.format({async = false })<CR>")
+
 keymap("n", "<C-Space>", "<cmd>WhichKey \\<space><cr>", opts)
 keymap("n", "<C-i>", "<C-i>", opts)
 
@@ -37,3 +43,4 @@ vim.cmd [[:amenu 10.110 mousemenu.References <cmd>lua vim.lsp.buf.references()<C
 
 vim.keymap.set("n", "<RightMouse>", "<cmd>:popup mousemenu<CR>")
 vim.keymap.set("n", "<Tab>", "<cmd>:popup mousemenu<CR>")
+
