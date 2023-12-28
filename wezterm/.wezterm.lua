@@ -10,6 +10,11 @@ if wezterm.config_builder then
 	config = wezterm.config_builder()
 end
 
+-- remove alt + enter to use it in neovim
+config.keys = {
+	{ key = "Enter", mods = "ALT", action = wezterm.action.DisableDefaultAssignment },
+}
+
 -- This is where you actually apply your config choices
 
 -- For example, changing the color scheme:

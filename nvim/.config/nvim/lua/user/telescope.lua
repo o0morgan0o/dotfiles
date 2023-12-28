@@ -12,6 +12,7 @@ function M.config()
 
   require("telescope").setup {
     defaults = {
+      file_ignore_patterns = { "node_modules", ".git", ".cache", "vendor", "build" },
       prompt_prefix = icons.ui.Telescope .. " ",
       selection_caret = icons.ui.Forward .. " ",
       entry_prefix = "   ",

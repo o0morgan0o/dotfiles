@@ -15,11 +15,14 @@ local copilot_config = {
 		},
 	},
 	suggestion = {
+    -- following is commented because i want to use tab as accept
+    -- view nvim-cmp.lua for more infom
 		enabled = true,
 		auto_trigger = true,
 		debounce = 75,
 		keymap = {
-			accept = "<M-l>",
+			-- accept = "<M-l>",
+      accept = false,
 			accept_word = false,
 			accept_line = false,
 			next = "<M-]>",

@@ -25,6 +25,7 @@ local function lsp_keymaps(bufnr)
   -- keymap(bufnr, "n", "ge", "<cmd>lua vim.diagnostic.goto_next()<CR>", opts)
   keymap(bufnr, "n", "<C-e>", "<cmd>lua vim.diagnostic.goto_next()<CR>", opts)
   keymap(bufnr, "n", "gp", "<cmd>lua vim.diagnostic.goto_prev()<CR>", opts)
+  keymap(bufnr, "n", "<m-Enter>", "<cmd>lua vim.lsp.buf.code_action()<CR>", opts)
   -- format
 end
 

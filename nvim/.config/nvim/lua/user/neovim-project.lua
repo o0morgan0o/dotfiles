@@ -3,6 +3,11 @@ return {
   opts = {
     projects = { -- define project roots
       "~/code/*",
+       "/tmp/app*",
+       "/tmp/test*",
+      "/tmp/tuto*",
+      "/tmp/my*"
+
     },
     last_session_on_startup = false,
   },
