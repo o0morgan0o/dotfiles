@@ -14,6 +14,12 @@ vim.keymap.set("n", "<M-1>", "<cmd>:NvimTreeFocus<CR>")
 -- format
 vim.keymap.set("n", "<C-f>", "<cmd>:lua vim.lsp.buf.format({async = false })<CR>")
 
+-- telescope project
+vim.keymap.set("n", "<m-p>", "<cmd>:Telescope neovim-project discover<CR>")
+
+-- telescope find files
+vim.keymap.set("n", "<C-p>", "<cmd>:Telescope find_files<CR>")
+
 keymap("n", "<C-Space>", "<cmd>WhichKey \\<space><cr>", opts)
 keymap("n", "<C-i>", "<C-i>", opts)
 
