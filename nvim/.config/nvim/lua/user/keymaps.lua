@@ -1,9 +1,9 @@
 local keymap = vim.keymap.set
 local opts = { noremap = true, silent = true }
 
-keymap("n", "<Space>", "", opts)
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
+-- keymap("n", "<Space>", "", opts)
+-- vim.g.mapleader = " "
+-- vim.g.maplocalleader = " "
 
 -- remap jk to esc
 vim.api.nvim_set_keymap("i", "jk", "<ESC>", {})
@@ -20,7 +20,18 @@ vim.keymap.set("n", "<m-p>", "<cmd>:Telescope neovim-project discover<CR>")
 -- telescope find files
 vim.keymap.set("n", "<C-p>", "<cmd>:Telescope find_files<CR>")
 
-keymap("n", "<C-Space>", "<cmd>WhichKey \\<space><cr>", opts)
+-- easymotion
+vim.keymap.set("n", "<Space>", "<cmd>:HopWord<CR>")
+
+-- comment remapping
+vim.keymap.set("n", "<C-/>", function() require('Comment.api').toggle.linewise.current() end, { noremap = true, silent = true })
+
+-- save with control-s
+vim.keymap.set("n", "<C-s>", "<cmd>:w<CR>")
+
+
+
+keymap("n", "<C-h>", "<cmd>WhichKey \\<space><cr>", opts)
 keymap("n", "<C-i>", "<C-i>", opts)
 
 -- Better window navigation
