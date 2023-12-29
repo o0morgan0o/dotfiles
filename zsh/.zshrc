@@ -114,11 +114,11 @@ plugins=(
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias x="xplr"
-alias r="ranger"
-alias vim="nvim"
-alias vi="nvim"
+alias r="ranger ~/Downloads"
 alias k="kubectl"
 alias w="watch "
+alias vim="nvim"
+alias vi="nvim"
 
 ZSH_THEME="agnoster"
 
@@ -158,5 +158,7 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+export EDITOR=/usr/bin/nvim
 
 export PATH

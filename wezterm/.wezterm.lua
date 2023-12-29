@@ -13,6 +13,7 @@ end
 -- remove alt + enter to use it in neovim
 config.keys = {
 	{ key = "Enter", mods = "ALT", action = wezterm.action.DisableDefaultAssignment },
+	{ key = "n", mods = "CTRL|SHIFT", action = wezterm.action.DisableDefaultAssignment },
 }
 
 -- This is where you actually apply your config choices
