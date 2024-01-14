@@ -186,3 +186,6 @@ unset __conda_setup
 HOME=${HOME:-'/home/morgan'}
 export PATH="$HOME/"'.platformsh/bin':"$PATH"
 if [ -f "$HOME/"'.platformsh/shell-config.rc' ]; then . "$HOME/"'.platformsh/shell-config.rc'; fi # END SNIPPET
+
+# Generated for envman. Do not edit.
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"

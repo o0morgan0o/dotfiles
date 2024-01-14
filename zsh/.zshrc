@@ -16,12 +16,13 @@ export ZSH="$HOME/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 #ZSH_THEME="robbyrussell"
+ZSH_THEME="agnoster"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
 # If set to an empty array, this variable will have no effect.
-ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
+#ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -113,18 +114,23 @@ plugins=(
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# to keep aliases even when we use sudo
+alias sudo="sudo"
 alias x="xplr"
 alias r="ranger ~/Downloads"
 alias k="kubectl"
 alias w="watch "
 alias vim="nvim"
 alias vi="nvim"
+alias glab="GITLAB_HOST=gitlab.morgan-thibert.com glab"
 
 ZSH_THEME="agnoster"
 
 HISTSIZE=1000
 SAVEHIST=1000
 HISTFILE=~/.zsh_history
+setopt SHARE_HISTORY
 
 
 # TMUX
@@ -134,10 +140,21 @@ ZSH_TMUX_AUTOQUIT=true
 ZSH_TMUX_CONFIG=$HOME/.tmux
 
 source $ZSH/oh-my-zsh.sh
+source ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 export PATH="${PATH}:/home/morgan/.cargo/bin"
 export PATH="${PATH}:/home/morgan/.npm-global/bin"
+# snap packages
+export PATH="${PATH}:/snap/bin"
 source ~/powerlevel10k/powerlevel10k.zsh-theme
+# other paths
+export PATH="${PATH}:/home/morgan/.local/bin"
+# toolbox jetbrans
+export PATH="${PATH}:/home/morgan/.local/share/JetBrains/Toolbox/scripts"
+
+# try to fix glitches bug with percents
+unsetopt PROMPT_SP
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -162,3 +179,4 @@ esac
 export EDITOR=/usr/bin/nvim
 
 export PATH
+

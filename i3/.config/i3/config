@@ -131,8 +131,8 @@ bindsym $mod+l  exec "i3lock --color 000000"
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1"
 set $ws2 "2"
-set $ws3 "3"
 set $ws4 "4"
+set $ws3 "3"
 set $ws9 "9"
 
 
@@ -215,7 +215,7 @@ exec --no-startup-id flameshot
 
 # highlight
 #client.focused          #4c7899
-client.focused	#ff0000	#ff0000	#ffffff	#ffffff	#ffffff
+client.focused	#ff0000	#ff0000	#ff0000	#ff0000	#ff0000
 for_window [class="^.*"] border pixel 6
 
 # shortcut for fsearch
