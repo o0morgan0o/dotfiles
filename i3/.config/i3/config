@@ -39,6 +39,10 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym $mod+s exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +2% && $refresh_i3status
 bindsym $mod+a exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -2% && $refresh_i3status
 
+# disable scroll on i3 bar
+bindsym button4 nop
+bindsym button5 nop
+
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
@@ -119,7 +123,7 @@ bindsym $mod+f floating toggle
 #bindsym $mod+space focus mode_toggle
 
 # hotky to lock screen
-bindsym $mod+l  exec "i3lock --color 000000"
+bindsym $mod+Shift+mod1+l  exec "i3lock --color 000000 --ignore-empty-password --show-failed-attempts"
 
 # focus the parent container
 #bindsym $mod+a focus parent
@@ -245,17 +249,22 @@ bindsym $mod+Shift+s exec flameshot gui
 bindsym $mod+Shift+v exec gpaste-client ui
 
 # scratchpad terminal
-bindsym $mod+Shift+u [instance="x-terminal-emulator"] move scratchpad
-bindsym $mod+u  [instance="x-terminal-emulator"] scratchpad show, [instance="x-terminal-emulator"] move position 3200 900, resize set 2600 1400
-for_window [instance="x-terminal-emulator"] move center
+#bindsym $mod+Shift+u [instance="x-terminal-emulator"] move scratchpad
+#bindsym $mod+u  [instance="x-terminal-emulator"] scratchpad show, [instance="x-terminal-emulator"] move position 3200 900, resize set 2600 1400
+#for_window [instance="x-terminal-emulator"] move center
 
 # scratchpad chromium
-bindsym $mod+Shift+i [instance="chromium"] move scratchpad
-bindsym $mod+i [instance="chromium"] scratchpad show, [instance="chromium"] move position 6550 1300, resize set 1600 900
-for_window [instance="chromium"] move scratchpad
-exec --no-startup-id chromium
+#bindsym $mod+Shift+i [instance="chromium"] move scratchpad
+#bindsym $mod+i [instance="chromium"] scratchpad show, [instance="chromium"] move position 6550 1300, resize set 1600 900
+#for_window [instance="chromium"] move scratchpad
+#exec --no-startup-id chromium
 
-# scratchpad all
+# scratchpad 3
 bindsym $mod+Shift+o move scratchpad
-bindsym $mod+o scratchpad show , move position center
+bindsym $mod+i scratchpad show , move position 200 1100, resize set 2100 1200
+bindsym $mod+o scratchpad show , move position 4550 1300, resize set 3200 1800, move position center
+
+# scratchpad 4
+# bindsym $mod+Shift+i [instance="scratch4"] move scratchpad
+# bindsym $mod+i [instance="scratch4"] scratchpad show , resize set 3000 1800, move position center
 

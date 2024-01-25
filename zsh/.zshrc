@@ -94,7 +94,8 @@ plugins=(
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+ export LANG=en_US.UTF-8
+ export LC_TYPE=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -131,6 +132,15 @@ HISTSIZE=1000
 SAVEHIST=1000
 HISTFILE=~/.zsh_history
 setopt SHARE_HISTORY
+# dont share history between tabs
+#unsetopt inc_append_history
+#unsetopt share_history
+
+
+
+# autocomplete
+setopt noautomenu
+setopt nomenucomplete
 
 
 # TMUX
@@ -152,6 +162,8 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 export PATH="${PATH}:/home/morgan/.local/bin"
 # toolbox jetbrans
 export PATH="${PATH}:/home/morgan/.local/share/JetBrains/Toolbox/scripts"
+# kubernetes krew
+export PATH="${PATH}:/home/morgan/.krew/bin"
 
 # try to fix glitches bug with percents
 unsetopt PROMPT_SP
@@ -159,9 +171,6 @@ unsetopt PROMPT_SP
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# dont share history between tabs
-unsetopt inc_append_history
-unsetopt share_history
 
 setxkbmap -layout "us" -variant "qwerty-fr"
 
@@ -180,3 +189,9 @@ export EDITOR=/usr/bin/nvim
 
 export PATH
 
+# prefered original behavior for history
+bindkey "$terminfo[kcuu1]" up-history
+bindkey "$terminfo[kcud1]" down-history
+# below is behavior for search including start of line
+#bindkey '\eOA' history-beginning-search-backward
+#bindkey '\e[A' history-beginning-search-backward
