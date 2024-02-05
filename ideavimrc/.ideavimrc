@@ -23,6 +23,7 @@ imap jk <Esc>
 
 set NERDTree 
 set multiple-cursors
+set surround
 
 
 " acejump (easymotion)

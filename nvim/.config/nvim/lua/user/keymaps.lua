@@ -61,6 +61,7 @@ keymap("n", "<m-h>", "<C-w>h", opts)
 keymap("n", "<m-j>", "<C-w>j", opts)
 keymap("n", "<m-k>", "<C-w>k", opts)
 keymap("n", "<m-l>", "<C-w>l", opts)
+-- quick focus between two files
 keymap("n", "<m-tab>", "<c-6>", opts)
 -- my custom mappings for navigation are
 --keymap("n", "<m-j>", "<C-w>h", opts)

@@ -10,6 +10,8 @@ if wezterm.config_builder then
 	config = wezterm.config_builder()
 end
 
+config.check_for_updates = false
+
 -- remove alt + enter to use it in neovim
 config.keys = {
 	{ key = "Enter", mods = "ALT", action = wezterm.action.DisableDefaultAssignment },
@@ -24,6 +26,8 @@ config.keys = {
 
 config.enable_scroll_bar = true
 config.font = wezterm.font("JetBrains Mono")
+
+config.hide_tab_bar_if_only_one_tab = true
 
 -- config.color_scheme = 'Batman'
 -- config.color_scheme = 'Dracula'

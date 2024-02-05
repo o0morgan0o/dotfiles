@@ -71,6 +71,8 @@ function M.config()
     -- trying to add php
     "intelephense",
     -- "none-ls"
+    -- emmet_ls
+    -- "emmet_ls",
   }
 
   local default_diagnostic_config = {
@@ -121,6 +123,22 @@ function M.config()
     if server == "lua_ls" then
       require("neodev").setup {}
     end
+
+    -- if server == "emmet_ls" then
+    --   opts.capabilities.textDocument.completion.completionItem.snippetSupport = true
+    --   server.setup({
+    --     capabilities = vim.lsp.protocol.make_client_capabilities(),
+    --     filetypes = { "css", "html", "javascript", "javascriptreact", "typescript", "typescriptreact", "astro" },
+    --     init_options = {
+    --       html = {
+    --         options = {
+    --         -- For possible options, see: https://github.com/emmetio/emmet/blob/master/src/config.ts#L79-L267
+    --           ["bem.enabled"] = true,
+    --         }
+    --       }
+    --     }
+    --   })
+    -- end
 
     -- for format on save
     -- if server == "none-ls" then

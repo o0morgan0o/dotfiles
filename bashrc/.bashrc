@@ -160,7 +160,7 @@ fi
   export PATH="${PATH}:/home/morgan/.cargo/bin"
 
 # pnpm
-export PNPM_HOME="/home/morgan/.local/share/pnpm"
+export PNPM_HOME="~/.local/share/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;

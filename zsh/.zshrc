@@ -131,8 +131,10 @@ ZSH_THEME="agnoster"
 HISTSIZE=1000
 SAVEHIST=1000
 HISTFILE=~/.zsh_history
-setopt SHARE_HISTORY
+#setopt SHARE_HISTORY
 # dont share history between tabs
+#unsetopt inc_append_history
+#unsetopt share_history
 #unsetopt inc_append_history
 #unsetopt share_history
 
