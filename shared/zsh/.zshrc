@@ -219,4 +219,4 @@ bindkey "$terminfo[kcud1]" down-history
 # Load Angular CLI autocompletion.
 source <(ng completion script)
 
-source /home/morgan/.config/broot/launcher/bash/br
+#source /home/morgan/.config/broot/launcher/bash/br
