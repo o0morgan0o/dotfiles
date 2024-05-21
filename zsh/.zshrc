@@ -157,10 +157,11 @@ ZSH_TMUX_CONFIG=$HOME/.tmux
 source $ZSH/oh-my-zsh.sh
 source ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 # autojump
-source /usr/share/autojump/autojump.zsh
+#source /usr/share/autojump/autojump.zsh
 # fzf key mappings
-source /usr/share/doc/fzf/examples/key-bindings.zsh
+#source /usr/share/doc/fzf/examples/key-bindings.zsh
 
 # cargo
 export PATH="${PATH}:/home/morgan/.cargo/bin"
@@ -169,7 +170,7 @@ export PATH="${PATH}:/home/morgan/.npm-global/bin"
 # snap packages
 export PATH="${PATH}:/snap/bin"
 # zsh-themes
-source ~/powerlevel10k/powerlevel10k.zsh-theme
+#source ~/powerlevel10k/powerlevel10k.zsh-theme
 # other paths
 export PATH="${PATH}:/home/morgan/.local/bin"
 # toolbox jetbrans
@@ -177,18 +178,17 @@ export PATH="${PATH}:/home/morgan/.local/share/JetBrains/Toolbox/scripts"
 # kubernetes krew
 export PATH="${PATH}:/home/morgan/.krew/bin"
 # go
-export PATH="${PATH}:/usr/local/go/bin"
+#export PATH="${PATH}:/usr/local/go/bin"
 # osmosis
-export PATH="${PATH}:/home/morgan/code/openstreetmap-tools/osmosis-0.49.2/bin"
+#export PATH="${PATH}:/home/morgan/code/openstreetmap-tools/osmosis-0.49.2/bin"
 # maperitive
-export PATH="${PATH}:/home/morgan/code/openstreet-mapper/maperitive/Maperitive"
+#export PATH="${PATH}:/home/morgan/code/openstreet-mapper/maperitive/Maperitive"
 
 # try to fix glitches bug with percents
 unsetopt PROMPT_SP
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
 
 setxkbmap -layout "us" -variant "qwerty-fr"
 
