@@ -434,7 +434,7 @@ window:
 #   - (Windows) powershell
 shell:
   # program: /usr/bin/fish
-  program: /bin/zsh
+  program: zsh
   # args:
   #   - -l
   #   - -c
