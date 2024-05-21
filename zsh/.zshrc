@@ -119,18 +119,21 @@ plugins=(
 # to keep aliases even when we use sudo
 alias sudo="sudo"
 alias x="xplr"
-alias r="ranger ~/Downloads"
-alias k="kubectl"
+alias r="yazi"
+alias y="yazi"
 alias w="watch "
 alias vim="nvim"
 alias vi="nvim"
 alias glab="GITLAB_HOST=gitlab.morgan-thibert.com glab"
+alias k="krusader --left ."
 
 ZSH_THEME="agnoster"
 
 HISTSIZE=1000
 SAVEHIST=1000
 HISTFILE=~/.zsh_history
+setopt no_share_history
+unsetopt share_history
 #setopt SHARE_HISTORY
 # dont share history between tabs
 #unsetopt inc_append_history
@@ -154,11 +157,18 @@ ZSH_TMUX_CONFIG=$HOME/.tmux
 source $ZSH/oh-my-zsh.sh
 source ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# autojump
+source /usr/share/autojump/autojump.zsh
+# fzf key mappings
+source /usr/share/doc/fzf/examples/key-bindings.zsh
 
+# cargo
 export PATH="${PATH}:/home/morgan/.cargo/bin"
+# npm binaries
 export PATH="${PATH}:/home/morgan/.npm-global/bin"
 # snap packages
 export PATH="${PATH}:/snap/bin"
+# zsh-themes
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 # other paths
 export PATH="${PATH}:/home/morgan/.local/bin"
@@ -166,6 +176,12 @@ export PATH="${PATH}:/home/morgan/.local/bin"
 export PATH="${PATH}:/home/morgan/.local/share/JetBrains/Toolbox/scripts"
 # kubernetes krew
 export PATH="${PATH}:/home/morgan/.krew/bin"
+# go
+export PATH="${PATH}:/usr/local/go/bin"
+# osmosis
+export PATH="${PATH}:/home/morgan/code/openstreetmap-tools/osmosis-0.49.2/bin"
+# maperitive
+export PATH="${PATH}:/home/morgan/code/openstreet-mapper/maperitive/Maperitive"
 
 # try to fix glitches bug with percents
 unsetopt PROMPT_SP
@@ -188,7 +204,6 @@ esac
 # pnpm end
 
 export EDITOR=/usr/bin/nvim
-
 export PATH
 
 # prefered original behavior for history
@@ -197,3 +212,11 @@ bindkey "$terminfo[kcud1]" down-history
 # below is behavior for search including start of line
 #bindkey '\eOA' history-beginning-search-backward
 #bindkey '\e[A' history-beginning-search-backward
+#
+#
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
+
+source /home/morgan/.config/broot/launcher/bash/br

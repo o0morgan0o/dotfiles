@@ -31,6 +31,7 @@ setxkbmap -option caps:backspace
 setxkbmap -option shift:both_capslock
 xmodmap -e "clear Lock"
 
+
 # M2_home and path
 M2_HOME='/opt/apache-maven-3.6.3'
 PATH="$M2_HOME/bin:$PATH"
@@ -52,5 +53,8 @@ alias f="fzf"
 
 if [ -e /home/morgan/.nix-profile/etc/profile.d/nix.sh ]; then . /home/morgan/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
 
+/home/morgan/keymap.sh
+
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
+

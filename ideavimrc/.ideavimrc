@@ -24,6 +24,8 @@ imap jk <Esc>
 set NERDTree 
 set multiple-cursors
 set surround
+set number
+set relativenumber
 
 
 " acejump (easymotion)
@@ -34,24 +36,26 @@ nmap <Space> :action KJumpAction.Word0<CR>
 sethandler <C-A> a:ide
 sethandler <C-B> a:ide
 sethandler <C-C> a:ide
-sethandler <C-D> a:ide
+sethandler <C-D> n:vim v:vim i:vim
 sethandler <C-E> a:ide
 sethandler <C-F> a:ide
 sethandler <C-G> a:ide
 sethandler <C-H> a:ide
+"sethandler <C-I> n:vim v:vim i:vim
 sethandler <C-I> a:ide
 sethandler <C-J> a:ide
 sethandler <C-K> a:ide
 sethandler <C-L> a:ide
 sethandler <C-M> a:ide
 sethandler <C-N> a:ide
-sethandler <C-O> n:ide v:ide i:vim
+"sethandler <C-O> n:vim v:vim i:vim
+sethandler <C-O> a:ide
 sethandler <C-P> a:ide
 sethandler <C-Q> a:ide
 sethandler <C-R> a:vim
 sethandler <C-S> a:ide
 sethandler <C-T> a:ide
-sethandler <C-U> a:ide
+"sethandler <C-U> n:vim v:vim i:vim
 sethandler <C-V> a:ide
 sethandler <C-W> n:ide v:ide i:vim
 sethandler <C-X> a:ide
