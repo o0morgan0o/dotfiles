@@ -71,7 +71,7 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
+ZSH_CUSTOM=/home/morgan/.oh-my-zsh/custom
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
@@ -82,15 +82,12 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 plugins=(
   git # définit tout un tas d'alias pour git
   z # permet de voir les répertoires les plus fréquemment utilisés `z <nom du répertoire>`
-  zsh-autosuggestions
-  zsh-syntax-highlighting
   zsh-256color
   kubectl-autocomplete
   symfony-console # for autocompletion symfony
   )
 
 # User configuration
-
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
