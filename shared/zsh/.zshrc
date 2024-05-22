@@ -185,7 +185,7 @@ export PATH="${PATH}:/home/morgan/.krew/bin"
 unsetopt PROMPT_SP
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+[[ ! -f ~/.p10k.zsh ]] || source /home/morgan/.p10k.zsh
 
 setxkbmap -layout "us" -variant "qwerty-fr"
 
@@ -214,6 +214,6 @@ bindkey "$terminfo[kcud1]" down-history
 
 
 # Load Angular CLI autocompletion.
-source <(ng completion script)
+#source <(ng completion script)
 
 #source /home/morgan/.config/broot/launcher/bash/br
