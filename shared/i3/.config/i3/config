@@ -67,8 +67,12 @@ floating_modifier $mod
 # Testing krusader just for fun
 #bindsym $mod+Return exec krusader --left .
 #bindsym $mod+Return exec wezterm
+<<<<<<< HEAD
 #bindsym $mod+Return exec alacritty -e zellij
 bindsym $mod+Return exec alacritty -e "tmux"
+=======
+bindsym $mod+Return exec alacritty -e tmux
+>>>>>>> 1e910b8 (chore: various laptop)
 
 # kill focused window
 bindsym $mod+Shift+q kill
