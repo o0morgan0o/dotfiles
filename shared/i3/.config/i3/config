@@ -67,7 +67,8 @@ floating_modifier $mod
 # Testing krusader just for fun
 #bindsym $mod+Return exec krusader --left .
 #bindsym $mod+Return exec wezterm
-bindsym $mod+Return exec alacritty -e zellij
+#bindsym $mod+Return exec alacritty -e zellij
+bindsym $mod+Return exec alacritty -e "tmux"
 
 # kill focused window
 bindsym $mod+Shift+q kill

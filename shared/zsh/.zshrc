@@ -1,3 +1,5 @@
+DISABLE_AUTO_UPDATE="true"
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -175,7 +177,7 @@ export PATH="${PATH}:/home/morgan/.local/share/JetBrains/Toolbox/scripts"
 # kubernetes krew
 export PATH="${PATH}:/home/morgan/.krew/bin"
 # go
-#export PATH="${PATH}:/usr/local/go/bin"
+export PATH="${PATH}:/usr/local/go/bin"
 # osmosis
 #export PATH="${PATH}:/home/morgan/code/openstreetmap-tools/osmosis-0.49.2/bin"
 # maperitive
