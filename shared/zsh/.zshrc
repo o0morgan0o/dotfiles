@@ -202,7 +202,8 @@ case ":$PATH:" in
 esac
 # pnpm end
 
-export EDITOR=/usr/bin/nvim
+export EDITOR=nvim
+export VISUAL=nvim
 export PATH
 
 # prefered original behavior for history
