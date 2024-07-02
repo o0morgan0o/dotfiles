@@ -182,6 +182,10 @@ export PATH="${PATH}:/usr/local/go/bin"
 #export PATH="${PATH}:/home/morgan/code/openstreetmap-tools/osmosis-0.49.2/bin"
 # maperitive
 #export PATH="${PATH}:/home/morgan/code/openstreet-mapper/maperitive/Maperitive"
+# wine
+export PATH="${PATH}:/usr/lib/wine/"
+# go
+export GOPATH=$HOME/go
 
 # try to fix glitches bug with percents
 unsetopt PROMPT_SP
