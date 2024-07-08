@@ -245,7 +245,7 @@ exec --no-startup-id flameshot
 # highlight
 #client.focused          #4c7899
 client.focused	#ff0000	#ff0000	#ff0000	#ff0000	#ff0000
-for_window [class="^.*"] border pixel 8
+for_window [class="^.*"] border pixel 2
 
 # shortcut for fsearch
 bindsym $mod+0 exec "fsearch"
